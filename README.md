@@ -1,6 +1,14 @@
 # Svelte + Vite + PWA
 
-## How to
+## Installation
+
+Install Vite with Svelte template:
+
+```bash
+npm create vite@latest vite-svelte-pwa -- --template svelte
+cd vite-svelte-pwa
+pnpm i
+```
 
 
 ## Create the following files and update accoring to your repo

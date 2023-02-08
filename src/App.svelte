@@ -19,6 +19,9 @@
   </div>
 
   <p>
+    <a href="https://github.com/shinokada/vite-svelte-pwa" target="_blank" rel="noreferrer">GitHub Repo</a>
+  </p>
+  <p>
     Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
   </p>
 
