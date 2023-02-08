@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Svelte + PWA</title>
+    <link rel="manifest" href="data:application/manifest+json;base64,ewogICJuYW1lIjogIlZpdGUgU3ZlbHRlIFBXQSIsCiAgInNob3J0X25hbWUiOiAidml0ZS1zdmVsdGUtcHdhIiwKICAic2NvcGUiOiAiLyIsCiAgInN0YXJ0X3VybCI6ICIuIiwKICAiaWNvbnMiOiBbCiAgICB7CiAgICAgICJzcmMiOiAiL2Fzc2V0cy9hcHBsZS10b3VjaC1pY29uLnBuZyIsCiAgICAgICJzaXplcyI6ICIxODB4MTgwIiwKICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgfSwKICAgIHsKICAgICAgInNyYyI6ICIvYXNzZXRzL2FuZHJvaWQtY2hyb21lLTE5MngxOTIucG5nIiwKICAgICAgInNpemVzIjogIjE5MngxOTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICB9LAogICAgewogICAgICAic3JjIjogIi9hc3NldHMvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLAogICAgICAic2l6ZXMiOiAiNTEyeDUxMiIsCiAgICAgICJ0eXBlIjogImltYWdlL3BuZyIKICAgIH0sCiAgICB7CiAgICAgICJzcmMiOiAiL2Fzc2V0cy9tYXNrYWJsZV9pY29uX3gxOTIucG5nIiwKICAgICAgInNpemVzIjogIjE5MngxOTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciLAogICAgICAicHVycG9zZSI6ICJhbnkgbWFza2FibGUiCiAgICB9CiAgXSwKICAidGhlbWVfY29sb3IiOiAiI2ZmZmZmZiIsCiAgImJhY2tncm91bmRfY29sb3IiOiAiI2ZmZmZmZiIsCiAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIKfQ==" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link
+      rel="android-chrome-192x192"
+      type="image/png"
+      sizes="192x192"
+      href="android-chrome-192x192.png"
+    />
+    <link
+      rel="android-chrome-512x512"
+      type="image/png"
+      sizes="512x512"
+      href="android-chrome-512x512.png"
+    />
+    <link rel="favicon-16x16" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="favicon-32x32" type="image/png" sizes="16x16" href="favicon-32x32.png" />
+    <meta name="pwa-capable" content="yes" />
+    <script type="module" crossorigin src="/vite-svelte-pwa/assets/index-85e47912.js"></script>
+    <link rel="stylesheet" href="/vite-svelte-pwa/assets/index-9ea02431.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    
+    <script>
+      // PWA
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js', {
+          scope: '/'
+        });
+      }
+    </script>
+  </body>
+</html>
