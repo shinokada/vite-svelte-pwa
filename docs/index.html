@@ -7,23 +7,23 @@
     <title>Vite + Svelte + PWA</title>
     <link rel="manifest" href="data:application/manifest+json;base64,ewogICJuYW1lIjogIlZpdGUgU3ZlbHRlIFBXQSIsCiAgInNob3J0X25hbWUiOiAidml0ZS1zdmVsdGUtcHdhIiwKICAic2NvcGUiOiAiLyIsCiAgInN0YXJ0X3VybCI6ICIuIiwKICAiaWNvbnMiOiBbCiAgICB7CiAgICAgICJzcmMiOiAiL2Fzc2V0cy9hcHBsZS10b3VjaC1pY29uLnBuZyIsCiAgICAgICJzaXplcyI6ICIxODB4MTgwIiwKICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgfSwKICAgIHsKICAgICAgInNyYyI6ICIvYXNzZXRzL2FuZHJvaWQtY2hyb21lLTE5MngxOTIucG5nIiwKICAgICAgInNpemVzIjogIjE5MngxOTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICB9LAogICAgewogICAgICAic3JjIjogIi9hc3NldHMvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLAogICAgICAic2l6ZXMiOiAiNTEyeDUxMiIsCiAgICAgICJ0eXBlIjogImltYWdlL3BuZyIKICAgIH0sCiAgICB7CiAgICAgICJzcmMiOiAiL2Fzc2V0cy9tYXNrYWJsZV9pY29uX3gxOTIucG5nIiwKICAgICAgInNpemVzIjogIjE5MngxOTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciLAogICAgICAicHVycG9zZSI6ICJhbnkgbWFza2FibGUiCiAgICB9CiAgXSwKICAidGhlbWVfY29sb3IiOiAiI2ZmZmZmZiIsCiAgImJhY2tncm91bmRfY29sb3IiOiAiI2ZmZmZmZiIsCiAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIKfQ==" />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="shortcut icon" href="/assets/favicon-7f0ca0f3.ico" type="image/x-icon" />
-    <link rel="icon" href="/assets/favicon-7f0ca0f3.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="/assets/apple-touch-icon-10a0e13d.png" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link
       rel="android-chrome-192x192"
       type="image/png"
       sizes="192x192"
-      href="/assets/android-chrome-192x192-0c827216.png"
+      href="android-chrome-192x192.png"
     />
     <link
       rel="android-chrome-512x512"
       type="image/png"
       sizes="512x512"
-      href="/assets/android-chrome-512x512-446e93f5.png"
+      href="android-chrome-512x512.png"
     />
-    <link rel="favicon-16x16" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAU9JREFUOE9jVHNsqmNg+FfN8J+BjYEUwMjwi4GBqZVRzbHhJ8maYRYxMvxiVHNo+E+KxehqUQzg4+FgsDNXYWBlYWb4+esPw/mrTxiev/rI4GSlxsDPy8nw799/hgMnbzN8/PQdbg6GCxRlhRm2LchmKGxew7DjwDWwQlYWJobpbZEMlZ0bGV6//YLiCKxeWNAby/D2/VeG4pZ1YMXcnGwM4b7GDPNWHcfwLVYD/F31GBoKvRmsgnoYvv/4zeDrostw8foThkdP3xNnACcHK8ORtcUMdT2bGbbuv8qQFWvHMG3xIaxhjTMWWkt9GQT5uRiqujYxeNhrMazYfJY0A0x05Rjm98Yy9M3ey7Bpz2VwmGADOF3AyMjAsHNxLsPt+68YsmtX4kwqeBMSyO9PX3xg2Lj7EnkGiAhyM3z78Zvh2/df5BlATBKnQmaiMDsDAK40hltlFarWAAAAAElFTkSuQmCC" />
-    <link rel="favicon-32x32" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAArdJREFUWEdjZGhoYFI/wFTFwPA/6z/Df0kGOgBGBsbnDAyM0246/GtjVHdoqvnP8K+ZDvZiWMHIwFTLqO7Q+IxePkd3ASgkGNUcGv4PhO9hdo46YHCHgLmBPEOYjzGDqDAvPJn8//+f4fnLjwx3H71hmL38KFw8I8aWwdxAgYGZmQku9u37T4alG04zHD51F2cyIxgCjIwMDIUpzgzpUTZgQ+avOs7QMX0XVgOFBLgYZrRFMmgqSzDU9m5m2LLvCsOfP//wpnGCDgDp5uflYDi8ppiBnY2F4cK1Jwzh2XNxGlqT58nw589fho5p2B2JkRWJzYYT6kIYPB21GUBR4Bo9ieHx8w9YHbF9YTZDTt1KhrsP3xCVu4kKAZBJduYqDLM7osGG9s3eyzBz2REMC7RUJRhaS/wYAtNnEWU5SBHRDgAlrgMrCxjEhHkZbt57yeCXPAPDktJ0F4a3778yzFt1nPoOAJkIsiAlwhpsuHfiNIY7D17DLWJkZGTYsyyPISp3HsPLN59p4wAVeVGGrQuywIZPW3yIYeK8/XCLjHXlGPISHRjiixYRbTlJUQAzdfW0FAY9TWmGh0/fMbjHTGaAVST1+V4MV28/Z1iz7TxtHRDlZ8JQX+gNtiQkczbD5RvPwIXP3mV54HTx6csP2joAuUyYv/o4OL/bmCozhPsYM+TWryLJcrKiAKQJVia8eP2JwTFiAkNrqR/D/uO3GHYduk4fByCXCcllSxiai30YPOKmMvz89Yc+DgCXCSsKGMREeBmevPjAcOLcfYbq7k0kW052FKCXCfHFi8COIAcQXRKiG64iL8KwdUE2w8s3nxgcwicw/PtHXsuObAeAHAQqE85cfsTQiaN6JiZEKHKAn6suw617rxhu3H1JjF1Y1VDkALJtRdI46oCBD4EB75oNeOd0oLvnAAPUG9xmQjSoAAAAAElFTkSuQmCC" />
+    <link rel="favicon-16x16" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="favicon-32x32" type="image/png" sizes="16x16" href="favicon-32x32.png" />
     <meta name="pwa-capable" content="yes" />
     <script type="module" crossorigin src="/assets/index-c88b134a.js"></script>
     <link rel="stylesheet" href="/assets/index-9ea02431.css">
