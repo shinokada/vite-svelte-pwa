@@ -25,8 +25,8 @@
     <link rel="favicon-16x16" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="favicon-32x32" type="image/png" sizes="16x16" href="favicon-32x32.png" />
     <meta name="pwa-capable" content="yes" />
-    <script type="module" crossorigin src="/assets/index-c88b134a.js"></script>
-    <link rel="stylesheet" href="/assets/index-9ea02431.css">
+    <script type="module" crossorigin src="assets/index-c88b134a.js"></script>
+    <link rel="stylesheet" href="assets/index-9ea02431.css">
   </head>
   <body>
     <div id="app"></div>
@@ -34,7 +34,7 @@
     <script>
       // PWA
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/service-worker.js', {
+        navigator.serviceWorker.register('service-worker.js', {
           scope: '/'
         });
       }
