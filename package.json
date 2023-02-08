@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp service-worker.js manifest.webmanifest CNAME ./docs ",
+    "build": "vite build && cp service-worker.js manifest.webmanifest CNAME ./dist ",
     "preview": "vite preview",
     "deploy": "npx gh-pages -d dist"
   },
