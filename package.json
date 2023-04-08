@@ -10,9 +10,9 @@
     "deploy": "npx gh-pages -d dist"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^2.0.2",
+    "@sveltejs/vite-plugin-svelte": "^2.0.4",
     "gh-pages": "^5.0.0",
-    "svelte": "^3.55.1",
-    "vite": "^4.1.0"
+    "svelte": "^3.58.0",
+    "vite": "^4.2.1"
   }
 }
